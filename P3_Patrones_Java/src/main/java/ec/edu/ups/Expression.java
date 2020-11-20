@@ -28,11 +28,7 @@ public  abstract class Expression {
         }else if( context.entrada.startsWith(five())){
             context.salida += 5* multiplier();
             context.entrada = context.entrada.substring(1);
-        }else if(context.entrada.startsWith(one())){
-            context.salida += 1*multiplier();
-            context.entrada =  context.entrada.substring(1);
-        }
-        while (context.entrada.startsWith(one())){
+        }while (context.entrada.startsWith(one())){
         context.salida += 1*multiplier();
         context.entrada = context.entrada.substring(1);
         }
